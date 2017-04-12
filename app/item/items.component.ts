@@ -16,9 +16,9 @@ export class ItemsComponent implements OnInit {
     ngOnInit(): void {
         let items = this.itemService.getItems();
         this.items = items.slice(0, 1);
-        // setTimeout(() => {
-        //     console.log('timeout, adding more items');
+        setTimeout(() => {
+            console.log('timeout, adding more items');
             this.items.push(...items.slice(1, 2));
-        // }, 500);
+        }, 500);
     }
 }
