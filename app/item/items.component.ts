@@ -18,7 +18,7 @@ export class ItemsComponent implements OnInit {
         this.items = items.slice(0, 1);
         // setTimeout(() => {
         //     console.log('timeout, adding more items');
-        //     this.items.push(...items.slice(1, 2));
+            this.items.push(...items.slice(1, 2));
         // }, 500);
     }
 }
